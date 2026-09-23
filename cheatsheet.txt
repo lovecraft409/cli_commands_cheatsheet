@@ -1,0 +1,66 @@
+source ~/.zshrc | reloads zsh config after editing it
+pwd | shows the current directory
+ls | lists files and directories
+ls -la | lists all files, including hidden ones, with details
+cd folder | moves into a directory
+cd .. | moves up one directory
+cd ~ | moves to the home directory
+cd - | returns to the previous directory
+mkdir folder | creates a new directory
+mkdir -p folder/subfolder | creates nested directories
+touch filename | creates an empty file
+cp file destination | copies a file
+cp -r folder destination | copies a directory
+mv file destination | moves or renames a file/directory
+⚠️ rm filename | permanently deletes a file
+⚠️ rm -r folder | permanently deletes a directory and its contents
+cat filename | displays file contents
+less filename | views file contents page by page
+grep "text" filename | searches for text in a file
+grep -r "text" . | searches recursively for "text" in all files in this folder
+find . -name "filename" | searches for a file by name
+clear | clears the terminal
+history | shows previously used commands
+which command | shows the location of a command
+chmod +x script.sh | makes a script executable
+./script.sh | runs an executable script
+⚠️ sudo command | runs a command with administrator privileges
+ps | shows running processes
+top | shows running processes and resource usage
+⚠️ kill PID | terminates a running process
+df -h | shows disk space usage
+du -sh folder | shows folder size
+free -h | shows RAM and swap usage
+whoami | shows the current user
+hostname | shows the computer hostname
+exit | exits the current shell
+source venv/bin/activate | activates the venv
+deactivate | deactivates the venv
+python3 -m venv .venv | creates a Python virtual environment
+which python3 | shows the current Python interpreter
+git init | creates a new git repository in the current folder
+git remote add origin <url> | links this repo to a remote (e.g. GitHub) repository
+git branch -M main | renames the current branch to "main"
+git status | shows the current git status
+git add . | stages all changed files for commit
+git add filename.py | stages a specific file for commit
+git restore --staged filename.py | unstages a specific file
+git commit -m "message" | saves staged changes with a description
+git push | uploads committed changes to the remote repository
+git push origin main | uploads commits specifically to the "main" branch on the remote
+git pull | downloads and integrates remote changes
+git remote -v | shows the current git remote urls
+git branch | lists local branches
+git switch branch | switches to another branch
+git switch -c branch | creates and switches to a new branch
+git clone <url> | downloads a remote repository
+systemctl status ollama | shows Ollama service status
+systemctl is-active ollama | checks if Ollama is currently running
+sudo systemctl start ollama | starts the Ollama service
+sudo systemctl stop ollama | stops the Ollama service
+sudo systemctl restart ollama | restarts the Ollama service
+sudo systemctl enable ollama | enables Ollama to start automatically at boot
+sudo systemctl disable ollama | prevents Ollama from starting automatically at boot
+ollama ps | shows currently running Ollama models
+ollama list | lists installed Ollama models
+pgrep -a ollama | shows running Ollama processes
