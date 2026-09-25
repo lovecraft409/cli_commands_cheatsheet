@@ -1,3 +1,4 @@
+from pathlib import Path
 import tkinter as tk
 
 
@@ -34,7 +35,9 @@ def copy_command(event):
 
 text.tag_bind("icon", "<Button-1>", copy_command)
 
-with open("cheatsheet.txt") as f:
+cheatsheet = Path(__file__).parent / "cheatsheet.txt"
+
+with open(cheatsheet) as f:
     commands = f.readlines()
 
 
@@ -50,7 +53,5 @@ def on_typing(*args):
             text.insert(tk.END, parts[0], "command")
             text.insert(tk.END, parts[1], "desc")
     text.config(state="disabled")
-
 search_text.trace_add("write", on_typing)
-
 root.mainloop()
